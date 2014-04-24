@@ -2,7 +2,6 @@
 require 'rubygems'
 require 'yaml'
 require 'open3'
-require 'pry'
 
 HELP = <<TXT
 Runnel is a easy way to manage your ssh tunnels. It relies on autossh
