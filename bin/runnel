@@ -116,10 +116,10 @@ class Runnel
     puts "AUTOSSH_PIDFILE=#{pid_file} autossh -M #{conf[:mport]} #{conf[:command]}"
     ENV['AUTOSSH_PIDFILE'] = pid_file
     stdin, stdout_err, wait_thr = Open3.popen2e("autossh -M #{conf[:mport]} #{conf[:command]}")
-    sleep(10)
+    sleep(60)
     stdin.close
     Process.detach(wait_thr.pid)
-    puts "and we're out"
+    puts "Runnel is now connected."
   end
 
   def kill
