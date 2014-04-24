@@ -1,11 +1,10 @@
 Gem::Specification.new do |s|
-  s.name    = 'runnel'
-  s.version = '0.0.4'
+  s.name    = 'cc_runnel'
+  s.version = '0.0.1'
   s.summary = 'An autossh tunnel manager, written in Ruby'
 
-  s.author   = 'Mark Percival'
-  s.email    = 'mark@mpercival.com'
-  s.homepage = 'https://github.com/mdp/runnel'
+  s.author   = 'Nik + Lauren'
+  s.homepage = 'https://github.com/CaseCommonsDevOps/runnel'
 
   s.files = Dir['lib/**/*']
   s.bindir = 'bin'
